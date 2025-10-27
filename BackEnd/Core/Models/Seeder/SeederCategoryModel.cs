@@ -8,4 +8,7 @@ public class SeederCategoryModel
     public string Name { get; set; } = string.Empty;
     [JsonPropertyName("image")]
     public string Image { get; set; } = string.Empty;
+
+    public SeederCategoryModel[]? Children { get; set; }
 }
+

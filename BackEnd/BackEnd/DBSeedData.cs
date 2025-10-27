@@ -2,6 +2,7 @@
 using Domain;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Text.Json;
 
 namespace WebApiATB;
@@ -23,16 +24,17 @@ public static class DbSeedData
                 var jsonData = await File.ReadAllTextAsync(jsonFile);
                 try
                 {
-                    var categories = JsonSerializer.Deserialize<List<SeederCategoryModel>>(jsonData);
-                    var entities = categories.Select(x =>
-                        new CategoryEntity
-                        {
-                            Image = x.Image,
-                            Name = x.Name,
-                        });
+                    
+                    var categories = JsonConvert.DeserializeObject<List<SeederCategoryModel>>(jsonData);
+                    //var entities = categories.Select(x =>
+                    //    new CategoryEntity
+                    //    {
+                    //        Image = x.Image,
+                    //        Name = x.Name,
+                    //    });
 
-                    await context.AddRangeAsync(entities);
-                    await context.SaveChangesAsync();
+                    //await context.AddRangeAsync(entities);
+                    //await context.SaveChangesAsync();
 
                 }
                 catch (Exception ex)
