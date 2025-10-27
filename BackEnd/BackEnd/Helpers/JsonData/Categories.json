@@ -2,242 +2,244 @@
   {
     "name": "Women",
     "image": "https://content.asos-media.com/-/media/homepages/ww/2025/october/13-neu/hero/ww-cold-weather_uk-hero_desktop_2880x1280.jpg",
+    "priority": 1,
     "children": [
       {
         "name": "Clothing",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg",
+        "priority": 1,
         "children": [
           {
             "name": "Tops",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 1
           },
           {
             "name": "Dresses",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 2
           },
           {
             "name": "Coats & Jackets",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 3
           },
           {
             "name": "Trousers & Leggings",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 4
           },
           {
             "name": "Jeans",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 5
           },
           {
             "name": "Suits & Tailoring",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 6
           },
           {
             "name": "Loungewear",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 7
           },
           {
             "name": "Swimwear & Beachwear",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 8
           }
         ]
       },
       {
         "name": "Shoes",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg",
+        "priority": 2,
         "children": [
           {
             "name": "Trainers",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 1
           },
           {
             "name": "Boots",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 2
           },
           {
             "name": "Heels",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 3
           },
           {
             "name": "Sandals",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 4
           },
           {
             "name": "Flat Shoes",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 5
           }
         ]
       },
       {
         "name": "Accessories",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg",
+        "priority": 3,
         "children": [
           {
             "name": "Bags & Purses",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 1
           },
           {
             "name": "Jewellery & Watches",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 2
           },
           {
             "name": "Hats & Scarves",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 3
           },
           {
             "name": "Belts",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 4
           },
           {
             "name": "Hair Accessories",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 5
           }
         ]
       },
       {
         "name": "Activewear",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+        "priority": 4
       },
       {
         "name": "Face + Body",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+        "priority": 5
       },
       {
         "name": "Sale",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+        "priority": 6
       },
       {
         "name": "Vintage",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+        "priority": 7
       },
       {
         "name": "Brands (A-Z)",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+        "priority": 8
       },
       {
         "name": "Body Fit / Size Categories",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+        "priority": 9
       }
     ]
   },
   {
     "name": "Men",
-    "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg",
+    "image": "https://content.asos-media.com/-/media/homepages/mw/2025/october/20-mena-row-apac-ie/hero/mwcollective_hero_desktop_2880x1280_uk.jpg",
+    "priority": 2,
     "children": [
       {
         "name": "Clothing",
-        "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg",
+        "priority": 1,
         "children": [
           {
             "name": "T-Shirts & Vests",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 1
           },
           {
             "name": "Shirts",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 2
           },
           {
             "name": "Hoodies & Sweatshirts",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 3
           },
           {
             "name": "Coats & Jackets",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 4
           },
           {
             "name": "Jeans",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichневiy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+            "priority": 5
           },
           {
             "name": "Trousers",
-            "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 6
           },
           {
             "name": "Shorts",
-            "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 7
           },
           {
             "name": "Suit & Tailoring",
-            "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 8
           }
         ]
       },
       {
         "name": "Shoes",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg",
+        "priority": 2,
         "children": [
           {
             "name": "Trainers",
-            "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 1
           },
           {
             "name": "Boots",
-            "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 2
           },
           {
             "name": "Smart Shoes",
-            "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 3
           }
         ]
       },
       {
         "name": "Accessories",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg",
+        "priority": 3,
         "children": [
           {
             "name": "Watches",
-            "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 1
           },
           {
             "name": "Bags & Backpacks",
-            "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 2
           },
           {
             "name": "Belts & Wallets",
-            "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+            "priority": 3
           }
         ]
       },
       {
         "name": "Activewear",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 4
       },
       {
         "name": "Grooming / Face + Body",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 5
       },
       {
         "name": "Sale",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 6
       },
       {
         "name": "Brands",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 7
       }
     ]
   },
   {
     "name": "Gifting / Seasonal",
-    "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg",
+    "priority": 3,
     "children": [
       {
         "name": "Gifts for Her",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 1
       },
       {
         "name": "Gifts for Him",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 2
       },
       {
         "name": "Stocking Fillers",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 3
       },
       {
         "name": "Festive Wear / Christmas",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 4
       },
       {
         "name": "Beauty & Fragrances",
-        "image": "https://romашка.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Rомашка-Коричневий.jpg"
+        "priority": 5
       }
     ]
   }

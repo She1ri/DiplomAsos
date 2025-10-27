@@ -36,14 +36,16 @@ public static class DbSeedData
                         {
                             TraverseCategories(rootCategory, category =>
                             {
-                                Console.WriteLine($"{category.Name} -> {category.Image}");
-                                category.Image=imageService
+                                if (!string.IsNullOrEmpty(category.Image))
+                                {
+                                    Console.WriteLine($"{category.Name} -> {category.Image}");
+                                    category.Image=imageService
                                     .SaveImageFromUrlAsync(category.Image).Result;
-                                // Тут можна зберегти зображення або зробити запит на завантаження
+                                }
                             });
                         }
-                        //await context.AddRangeAsync(entities);
-                        //await context.SaveChangesAsync();
+                        await context.AddRangeAsync(entities);
+                        await context.SaveChangesAsync();
                     }
                     
 
