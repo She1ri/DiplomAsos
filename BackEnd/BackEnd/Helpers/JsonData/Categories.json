@@ -1,38 +1,246 @@
 [
   {
-    "name": "Жіночий одяг",
-    "image": "https://romashka.co.ua/images/thumbnails/430/573/detailed/5968/product-Palto-Sheyd-Romashka-Korichneviy-S-M-19625_ca1de627afb8240bc28821329ce7cf77.jpg"
+    "name": "Women",
+    "image": "https://content.asos-media.com/-/media/homepages/ww/2025/october/13-neu/hero/ww-cold-weather_uk-hero_desktop_2880x1280.jpg",
+    "priority": 1,
+    "children": [
+      {
+        "name": "Clothing",
+        "priority": 1,
+        "children": [
+          {
+            "name": "Tops",
+            "priority": 1
+          },
+          {
+            "name": "Dresses",
+            "priority": 2
+          },
+          {
+            "name": "Coats & Jackets",
+            "priority": 3
+          },
+          {
+            "name": "Trousers & Leggings",
+            "priority": 4
+          },
+          {
+            "name": "Jeans",
+            "priority": 5
+          },
+          {
+            "name": "Suits & Tailoring",
+            "priority": 6
+          },
+          {
+            "name": "Loungewear",
+            "priority": 7
+          },
+          {
+            "name": "Swimwear & Beachwear",
+            "priority": 8
+          }
+        ]
+      },
+      {
+        "name": "Shoes",
+        "priority": 2,
+        "children": [
+          {
+            "name": "Trainers",
+            "priority": 1
+          },
+          {
+            "name": "Boots",
+            "priority": 2
+          },
+          {
+            "name": "Heels",
+            "priority": 3
+          },
+          {
+            "name": "Sandals",
+            "priority": 4
+          },
+          {
+            "name": "Flat Shoes",
+            "priority": 5
+          }
+        ]
+      },
+      {
+        "name": "Accessories",
+        "priority": 3,
+        "children": [
+          {
+            "name": "Bags & Purses",
+            "priority": 1
+          },
+          {
+            "name": "Jewellery & Watches",
+            "priority": 2
+          },
+          {
+            "name": "Hats & Scarves",
+            "priority": 3
+          },
+          {
+            "name": "Belts",
+            "priority": 4
+          },
+          {
+            "name": "Hair Accessories",
+            "priority": 5
+          }
+        ]
+      },
+      {
+        "name": "Activewear",
+        "priority": 4
+      },
+      {
+        "name": "Face + Body",
+        "priority": 5
+      },
+      {
+        "name": "Sale",
+        "priority": 6
+      },
+      {
+        "name": "Vintage",
+        "priority": 7
+      },
+      {
+        "name": "Brands (A-Z)",
+        "priority": 8
+      },
+      {
+        "name": "Body Fit / Size Categories",
+        "priority": 9
+      }
+    ]
   },
   {
-    "name": "Чоловічий одяг",
-    "image": "https://richman.ua/wp-content/uploads/2020/04/2f2b7e54-3238-47ec-b3e7-3175220cd51e_LT1-3_20_652020_01_web.jpg"
+    "name": "Men",
+    "image": "https://content.asos-media.com/-/media/homepages/mw/2025/october/20-mena-row-apac-ie/hero/mwcollective_hero_desktop_2880x1280_uk.jpg",
+    "priority": 2,
+    "children": [
+      {
+        "name": "Clothing",
+        "priority": 1,
+        "children": [
+          {
+            "name": "T-Shirts & Vests",
+            "priority": 1
+          },
+          {
+            "name": "Shirts",
+            "priority": 2
+          },
+          {
+            "name": "Hoodies & Sweatshirts",
+            "priority": 3
+          },
+          {
+            "name": "Coats & Jackets",
+            "priority": 4
+          },
+          {
+            "name": "Jeans",
+            "priority": 5
+          },
+          {
+            "name": "Trousers",
+            "priority": 6
+          },
+          {
+            "name": "Shorts",
+            "priority": 7
+          },
+          {
+            "name": "Suit & Tailoring",
+            "priority": 8
+          }
+        ]
+      },
+      {
+        "name": "Shoes",
+        "priority": 2,
+        "children": [
+          {
+            "name": "Trainers",
+            "priority": 1
+          },
+          {
+            "name": "Boots",
+            "priority": 2
+          },
+          {
+            "name": "Smart Shoes",
+            "priority": 3
+          }
+        ]
+      },
+      {
+        "name": "Accessories",
+        "priority": 3,
+        "children": [
+          {
+            "name": "Watches",
+            "priority": 1
+          },
+          {
+            "name": "Bags & Backpacks",
+            "priority": 2
+          },
+          {
+            "name": "Belts & Wallets",
+            "priority": 3
+          }
+        ]
+      },
+      {
+        "name": "Activewear",
+        "priority": 4
+      },
+      {
+        "name": "Grooming / Face + Body",
+        "priority": 5
+      },
+      {
+        "name": "Sale",
+        "priority": 6
+      },
+      {
+        "name": "Brands",
+        "priority": 7
+      }
+    ]
   },
   {
-    "name": "Взуття",
-    "image": "https://born2be.ua/weloveborn2be/wp-content/uploads/2020/02/Co-zrobi%C4%87-%C5%BCeby-buty-nie-farbowa%C5%82y.png"
-  },
-  {
-    "name": "Краса",
-    "image": "https://www.bsmu.edu.ua/wp-content/uploads/2019/03/4890.jpg"
-  },
-  {
-    "name": "Аксесуари",
-    "image": "https://ecofabrica.com.ua/files/cache/72/d0/e6/ecofabrica-zhenskiye-aksessuary-1644319299.jpg"
-  },
-  {
-    "name": "Купальники",
-    "image": "https://diforte.ua/pic/TWINSET_1742_1-694x1040/TWINSET_1742_1-694x1040.jpg"
-  },
-  {
-    "name": "Одяг для різних фігур",
-    "image": "https://valeotrikotage.com/assets/images/blog/blog_11/djt_1.jpg"
-  },
-  {
-    "name": "Етична",
-    "image": "https://iclub.in.ua/wp-content/uploads/2019/12/zhenskij-nacionalnyj-kostyum-02.jpg"
-  },
-  {
-    "name": "Спортивний одяг",
-    "image": "https://static.staff-clothes.com/uploads/media/image_product/0003/16/eb08e0e49ed84f90bb663515d2b35dfa.jpeg"
+    "name": "Gifting / Seasonal",
+    "priority": 3,
+    "children": [
+      {
+        "name": "Gifts for Her",
+        "priority": 1
+      },
+      {
+        "name": "Gifts for Him",
+        "priority": 2
+      },
+      {
+        "name": "Stocking Fillers",
+        "priority": 3
+      },
+      {
+        "name": "Festive Wear / Christmas",
+        "priority": 4
+      },
+      {
+        "name": "Beauty & Fragrances",
+        "priority": 5
+      }
+    ]
   }
 ]
