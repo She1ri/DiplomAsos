@@ -28,7 +28,6 @@ public class CategoriesController(IMapper mapper,
                 .AsQueryable()
                 .OrderBy(x=>x.Priority);
         var model = mapper.Map<CategoryItemModel[]>(categories)
-            
             .ToList();
 
         return Ok(model);
