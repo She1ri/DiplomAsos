@@ -19,5 +19,5 @@ public class CategoryEntity : BaseEntity<int>
     public int? ParentId { get; set; }
     public CategoryEntity? Parent { get; set; }
 
-    public virtual ICollection<CategoryEntity>? Children { get; set; }
+    public virtual ICollection<CategoryEntity> Children { get; set; }
 }
