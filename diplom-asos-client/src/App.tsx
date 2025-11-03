@@ -1,4 +1,5 @@
 import './App.css'
+import LoginPage from "./pages/LoginPage";
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
      <h1>
          Hello my friends!
      </h1>
+        <LoginPage />
     </>
   )
 }
