@@ -3,10 +3,10 @@ import {useLoginByGoogleMutation} from "../../features/account/apiAccount.ts";
 
 const LoginPage = () => {
 
-    const [apiLoginGoogle, {isLoading, error}] = useLoginByGoogleMutation();
+    const [apiLoginGoogle] = useLoginByGoogleMutation();
 
-    console.log("Loading", isLoading);
-    console.log("Error", error);
+    // console.log("Loading", isLoading);
+    // console.log("Error", error);
 
     const loginByGoogle = useGoogleLogin({
         onSuccess: async tokenResponse => {
@@ -15,7 +15,11 @@ const LoginPage = () => {
                 const result = await apiLoginGoogle({
                     token: access_token,
                 });
-                console.log("Result", result);
+
+                if(result.error) {
+                    console.error("Error", result.error);
+                }
+                //console.log("Result", result);
             }
             catch (e) {
                 console.log("Problem", e);
