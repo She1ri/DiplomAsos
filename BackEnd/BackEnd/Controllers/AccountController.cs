@@ -7,7 +7,7 @@ namespace BackEnd.Controllers;
 
 [Route("api/[controller]/[action]")]
 [ApiController]
-public class AccountController(IAccountService accountService) : ControllerBase
+public class AccountController(IAccountService accountService, ISmtpService smtpService) : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequestModel model)
@@ -22,6 +22,12 @@ public class AccountController(IAccountService accountService) : ControllerBase
                 Errors = new { Email = "Помилка реєстрації" }
             });
         }
+        await smtpService.SendEmailAsync(new Core.SMTP.EmailMessage
+        {
+            Subject = "subject",
+            Body = "тестуємо пошту",
+            To = "alexshelepalo8@gmail.com"
+        });
         return Ok(new
         {
             Token = result

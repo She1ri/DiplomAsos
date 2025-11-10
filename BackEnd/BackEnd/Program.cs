@@ -17,6 +17,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<ISmtpService, SmtpService>();
 
 builder.Services.AddIdentity<UserEntity, RoleEntity>(options =>
 {
