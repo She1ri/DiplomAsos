@@ -1,13 +1,19 @@
 ﻿
+using AutoMapper;
+using Core.Constants;
 using Core.Interfaces;
 using Core.Models.Account;
+using Core.Services;
+using Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackEnd.Controllers;
 
 [Route("api/[controller]/[action]")]
 [ApiController]
-public class AccountController(IAccountService accountService, ISmtpService smtpService) : ControllerBase
+public class AccountController(IAccountService accountService, ISmtpService smtpService, IMapper mapper, IImageService imageService,
+    UserManager<UserEntity> userManager, IJwtTokenService jwtTokenService) : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequestModel model)
@@ -32,5 +38,33 @@ public class AccountController(IAccountService accountService, ISmtpService smtp
         {
             Token = result
         });
+    }
+    [HttpPost]
+    public async Task<IActionResult> Register([FromForm] RegisterModel model)
+    {
+        var user = mapper.Map<UserEntity>(model);
+
+        user.Image = await imageService.SaveImageAsync(model.ImageFile!);
+
+        var result = await userManager.CreateAsync(user, model.Password);
+        if (result.Succeeded)
+        {
+            await userManager.AddToRoleAsync(user, Roles.User);
+            var token = await jwtTokenService.CreateTokenAsync(user);
+            return Ok(new
+            {
+                Token = token
+            });
+        }
+        else
+        {
+            return BadRequest(new
+            {
+                status = 400,
+                isValid = false,
+                errors = "Registration failed"
+            });
+        }
+
     }
 }

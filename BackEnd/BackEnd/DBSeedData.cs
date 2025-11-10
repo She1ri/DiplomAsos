@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using Core.Constants;
 using Core.Interfaces;
 using Core.Models.Seeder;
 using Domain;
 using Domain.Entities;
+using Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Text.Json;
@@ -17,6 +20,8 @@ public static class DbSeedData
         var context = scoped.ServiceProvider.GetRequiredService<AppDbContext>();
         var mapper = scoped.ServiceProvider.GetRequiredService<IMapper>();
         var imageService = scoped.ServiceProvider.GetRequiredService<IImageService>();
+        var roleManager = scoped.ServiceProvider.GetRequiredService<RoleManager<RoleEntity>>();
+        var userManager = scoped.ServiceProvider.GetRequiredService<UserManager<UserEntity>>();
 
         await context.Database.MigrateAsync();
 
@@ -58,6 +63,17 @@ public static class DbSeedData
             else
             {
                 Console.WriteLine("Not Found File Categories.json");
+            }
+        }
+        if (!context.Roles.Any())
+        {
+            foreach (var roleName in Roles.AllRoles)
+            {
+                var result = await roleManager.CreateAsync(new(roleName));
+                if (!result.Succeeded)
+                {
+                    Console.WriteLine("Error Create Role {0}", roleName);
+                }
             }
         }
     }
