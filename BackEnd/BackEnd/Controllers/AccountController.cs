@@ -57,14 +57,46 @@ public class AccountController(IAccountService accountService, ISmtpService smtp
             });
         }
         else
-        {
+        { 
+            string data = "";
+            foreach(var eror in result.Errors)
+            {
+                data += eror.Description + " ";
+            }
+            
+
             return BadRequest(new
             {
                 status = 400,
                 isValid = false,
-                errors = "Registration failed"
+                errors = data
             });
         }
 
+    }
+    [HttpPost]
+    public async Task<IActionResult> Login([FromBody] LoginModel model)
+    {
+        var user = await userManager.FindByEmailAsync(model.Email);
+        if (user != null && await userManager.CheckPasswordAsync(user, model.Password))
+        {
+            var token = await jwtTokenService.CreateTokenAsync(user);
+            return Ok(new { Token = token });
+        }
+        return Unauthorized("Invalid email or password");
+    }
+    [HttpPost]
+    public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordModel model)
+    {
+        bool res = await accountService.ForgotPasswordAsync(model);
+        if (res)
+            return Ok();
+        else
+            return BadRequest(new
+            {
+                Status = 400,
+                IsValid = false,
+                Errors = new { Email = "Користувача з такою поштою не існує" }
+            });
     }
 }
