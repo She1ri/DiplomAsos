@@ -40,6 +40,20 @@ public class AccountService(IJwtTokenService tokenService,
 
         return result;
     }
+    public async Task<bool> ResetPasswordAsync(ResetPasswordModel model)
+    {
+        var user = await userManager.FindByEmailAsync(model.Email);
+
+        if (user != null)
+        {
+            var result = await userManager.ResetPasswordAsync(user, model.Token, model.NewPassword);
+            if(result.Succeeded)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     public async Task<string> LoginByGoogle(string token)
     {
         using var httpClient = new HttpClient();
@@ -94,6 +108,7 @@ public class AccountService(IJwtTokenService tokenService,
                 return jwtToken;
             }
         }
+
 
         return string.Empty;
     }

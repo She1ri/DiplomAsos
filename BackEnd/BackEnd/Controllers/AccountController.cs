@@ -75,6 +75,16 @@ public class AccountController(IAccountService accountService, ISmtpService smtp
 
     }
     [HttpPost]
+    public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordModel model)
+    {
+        var result = await accountService.ResetPasswordAsync(model);
+
+        if(result)
+            return Ok();
+
+        return BadRequest();
+    }
+    [HttpPost]
     public async Task<IActionResult> Login([FromBody] LoginModel model)
     {
         var user = await userManager.FindByEmailAsync(model.Email);
