@@ -1,4 +1,3 @@
-import LoginPage from "../LoginPage";
 import {useAppDispatch, useAppSelector} from "../../store";
 import {logout} from "../../store/authSlice.ts";
 
