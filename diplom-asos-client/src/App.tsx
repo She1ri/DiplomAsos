@@ -1,25 +1,16 @@
 import './App.css'
+import {Route, Routes} from "react-router-dom";
+import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
-import {useAppDispatch, useAppSelector} from "./store";
-import {logout} from "./store/authSlice.ts";
 
 function App() {
-
-    const {user} = useAppSelector(state => state.auth);
-    const dispatch = useAppDispatch();
-
-    const logoutHandler = async () => {
-        dispatch(logout());
-    }
-
   return (
-    <>
-     <h1>
-         Hello my friends! {user?.name}
-     </h1>
-        <button onClick={logoutHandler}>Logout</button>
-        <LoginPage />
-    </>
+      <Routes>
+          <Route path="/" >
+              <Route index element={<HomePage/>} />
+              <Route path={'login'} element={<LoginPage/>} />
+          </Route>
+      </Routes>
   )
 }
 
