@@ -14,6 +14,8 @@ public class AppDbContext : IdentityDbContext<UserEntity, RoleEntity, long,
         : base(dbContextOptions) { }
 
     public DbSet<CategoryEntity> Categories { get; set; }
+    public DbSet<ProductEntity> Products { get; set; }
+    public DbSet<ProductImageEntity> ProductImages { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
