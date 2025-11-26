@@ -1,5 +1,7 @@
 import {useGoogleLogin} from "@react-oauth/google";
 import {useLoginByGoogleMutation} from "../../features/account/apiAccount.ts";
+import { IoLogoGoogle } from "react-icons/io5";
+
 
 const LoginPage = () => {
 
@@ -31,7 +33,17 @@ const LoginPage = () => {
     return (
         <>
             <h1>Вхід на сайт</h1>
-            <button onClick={() => { loginByGoogle(); }}>Login By GOOGLE</button>
+            <button
+                type="button"
+                className="bg-blue-500 hover:bg-blue-700 cursor-pointer text-white font-bold py-2 px-4 rounded flex items-center"
+                onClick={() => {
+                    loginByGoogle();
+                }}
+            >
+                Login By Google
+                <IoLogoGoogle color="yellow" className="ml-2" size={20} />
+            </button>
+
         </>
     )
 }
